@@ -1,7 +1,7 @@
 /* ====== الصفحات ====== */
 const pages = [
     {
-        img: "images/1.jpeg",
+        img: "images/1.JPEG",
         day: "الذكرى الاولى",
         date: "16 / 2 / 2025",
         text: "اول صوره تبعتهالي و اليوم اخدت عهد ع نفسي اني عمري مااسيب القمر ده ."
@@ -194,3 +194,4 @@ function toggleMusic() {
 document.body.addEventListener("click", () => {
     music.play();
 }, { once: true });
+
