@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background: url("images/bg.jpeg") center / cover no-repeat;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.counter {
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.15);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.book {
+    max-width: 360px;
+    margin: 40px auto;
+}
+
+.page {
+    height: 460px;
+    border-radius: 20px;
+    overflow: hidden;
+    perspective: 1200px;   /* منظور ثلاثي الأبعاد */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.05);
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: left center; /* التقليب من جنب */
+    transition: transform 0.8s ease, opacity 0.4s ease;
+    backface-visibility: hidden;
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset -40px 0 60px rgba(0,0,0,0.3);
+    pointer-events: none;
+}
+
+
+.text {
+    margin-top: 20px;
+}
+
+.text span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.text p {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav button {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}

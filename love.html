@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Story ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">▶️</button>
+
+<div class="container">
+
+    <div class="counter" id="counter"></div>
+
+    <div class="book">
+
+        <div class="page">
+            <img id="photo">
+        </div>
+
+        <div class="text">
+            <h3 id="day"></h3>
+            <span id="date"></span>
+            <p id="feeling"></p>
+        </div>
+
+        <div class="nav">
+            <button onclick="prevPage()">← نرجع تاني يبطتي</button>
+            <button onclick="nextPage()">الي بعده ي عيوني →</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

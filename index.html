@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #d50606, #000);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            background: #ff6b81;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #ffaaaa;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>اكتبي الpassword❤️</h2>
+    <input type="password" id="password" placeholder="password">
+    <button onclick="check()">دخول</button>
+    <p id="error">الرمز غلط يبطتي ركزي</p>
+</div>
+
+<script>
+function check() {
+    const pass = document.getElementById("password").value;
+
+    if (pass === "27/9/2007") {   // ← غير الرمز هنا
+        window.location.href = "love.html";
+    } else {
+        document.getElementById("error").style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
