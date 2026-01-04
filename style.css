@@ -14,7 +14,7 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    background: url("images/bg.jpeg") center / cover no-repeat;
+    background: url("bg.jpeg") center / cover no-repeat;
     filter: brightness(0.4);
     z-index: -1;
 }
@@ -118,3 +118,4 @@ body {
     cursor: pointer;
     backdrop-filter: blur(5px);
 }
+
