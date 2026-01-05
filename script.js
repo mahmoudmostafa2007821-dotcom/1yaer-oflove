@@ -151,8 +151,12 @@ function showPage(i) {
 
 
 function nextPage() {
-    current = (current + 1) % pages.length;
-    showPage(current);
+    if (current < pages.length - 1) {
+        current++;
+        showPage(current);
+    } else {
+        window.location.href = "final.html";
+    }
 }
 
 function prevPage() {
@@ -194,7 +198,3 @@ function toggleMusic() {
 document.body.addEventListener("click", () => {
     music.play();
 }, { once: true });
-
-
-
-
